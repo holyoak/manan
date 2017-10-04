@@ -1,0 +1,22 @@
+{
+  "name": "manan",
+  "version": "0.0.1",
+  "description": "A cryptocurrency trading platform at various exchanges",
+  "keywords": [
+    "trading",
+    "bot",
+    "bitcoin",
+    "cryptocurrency",
+    "TA",
+    "finance"
+  ],
+  "author": "holyoak",
+  "engines": {
+    "node": ">=6.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holyoak/manan.git"
+  }
+}
