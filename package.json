@@ -18,5 +18,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/holyoak/manan.git"
+  },
+  "dependencies": {
+    "autobahn": "^17.5.2"
   }
 }
