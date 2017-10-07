@@ -1,1 +1,3 @@
-node modules
+dev
+node_modules
+src/auth

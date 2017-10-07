@@ -20,6 +20,8 @@
     "url": "https://github.com/holyoak/manan.git"
   },
   "dependencies": {
-    "autobahn": "^17.5.2"
+    "autobahn": "^17.5.2",
+    "terminal-kit": "^1.13.12",
+    "ws": "^3.2.0"
   }
 }

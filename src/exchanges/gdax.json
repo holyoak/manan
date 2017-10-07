@@ -1,0 +1,177 @@
+{
+  "id": "gdax",
+  "name": "GDAX",
+  "countries": "US",
+  "rateLimit": 1000,
+  "hasCORS": true,
+  "hasFetchOHLCV": true,
+  "hasWithdraw": true,
+  "timeframes": {
+      "1m": 60,
+      "5m": 300,
+      "15m": 900,
+      "30m": 1800,
+      "1h": 3600,
+      "2h": 7200,
+      "4h": 14400,
+      "12h": 43200,
+      "1d": 86400,
+      "1w": 604800,
+      "1M": 2592000,
+      "1y": 31536000
+  },
+  "urls": {
+      "test": "https://api-public.sandbox.gdax.com",
+      "logo": "./gdax.jpg",
+      "api": "https://api.gdax.com",
+      "feed": "wss://ws-feed.gdax.com",
+      "www": "https://www.gdax.com",
+      "doc": "https://docs.gdax.com"
+  },
+  "currencies": [
+    {
+      "id": "BTC",
+      "pairs": [ 
+        { "id": "ETH", "market_id": "eth-btc" }, 
+        { "id": "LTC", "market_id": "ltc-btc" }, 
+        { "id": "USD", "market_id": "btc-usd" } 
+      ]
+    },
+    {
+      "id": "ETH",
+      "pairs": [ 
+        { "id": "BTC", "market_id": "eth-btc" }, 
+        { "id": "USD", "market_id": "btc-usd" } 
+      ]
+    },
+    {
+      "id": "LTC",
+      "pairs": [ 
+        { "id": "BTC", "market_id": "ltc-btc" }, 
+        { "id": "USD", "market_id": "btc-usd" } 
+      ]
+    },
+    {
+      "id": "USD",
+      "pairs": [ 
+        { "id": "ETH", "market_id": "eth-usd" }, 
+        { "id": "LTC", "market_id": "ltc-usd" }, 
+        { "id": "BTC", "market_id": "btc-usd" } 
+      ]
+    }
+  ],
+  "markets": [
+    {
+      "id":     "btc-usd",
+      "symbol": "BTC/USD",
+      "base":   "BTC",
+      "quote":  "USD",
+      "info":   {
+        "fees": {
+          "maker": 0,
+          "taker": 0.0025
+        },
+      "endpoint": "BTC-USD"
+      }   
+    },
+    {
+      "id":     "eth-usd",
+      "symbol": "ETH/USD",
+      "base":   "ETH",
+      "quote":  "USD",
+      "info":   {
+        "fees": {
+          "maker": 0,
+          "taker": 0.0025
+        },
+      "endpoint": "ETH-USD"
+      }   
+    },
+    {
+      "id":     "ltc-usd",
+      "symbol": "LTC/USD",
+      "base":   "LTC",
+      "quote":  "USD",
+      "info":   {
+        "fees": {
+          "maker": 0,
+          "taker": 0.0025
+        },
+      "endpoint": "LTC-USD"
+      }   
+    },
+    {
+      "id":     "eth-btc",
+      "symbol": "ETH/BTC",
+      "base":   "ETH",
+      "quote":  "BTC",
+      "info":   {
+        "fees": {
+          "maker": 0,
+          "taker": 0.0025
+        },
+      "endpoint": "ETH-BTC"
+      }   
+    },
+    {
+      "id":     "ltc-btc",
+      "symbol": "LTC/BTC",
+      "base":   "LTC",
+      "quote":  "BTC",
+      "info":   {
+        "fees": {
+          "maker": 0,
+          "taker": 0.0025
+        },
+      "endpoint": "LTC-BTC"
+      }   
+    }            
+  ],
+  "api": {
+    "public": {
+      "get": [
+          "currencies",
+          "products",
+          "products/{id}/book",
+          "products/{id}/candles",
+          "products/{id}/stats",
+          "products/{id}/ticker",
+          "products/{id}/trades",
+          "time"
+      ]
+    },
+    "private": {
+      "get": [
+          "accounts",
+          "accounts/{id}",
+          "accounts/{id}/holds",
+          "accounts/{id}/ledger",
+          "coinbase-accounts",
+          "fills",
+          "funding",
+          "orders",
+          "orders/{id}",
+          "payment-methods",
+          "position",
+          "reports/{id}",
+          "users/self/trailing-volume"
+      ],
+      "post": [
+          "deposits/coinbase-account",
+          "deposits/payment-method",
+          "funding/repay",
+          "orders",
+          "position/close",
+          "profiles/margin-transfer",
+          "reports",
+          "withdrawals/coinbase",
+          "withdrawals/crypto",
+          "withdrawals/payment-method"
+      ],
+      "delete": [
+          "orders",
+          "orders/{id}"
+      ]
+    }
+  }
+}
