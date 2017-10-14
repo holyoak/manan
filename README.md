@@ -3,6 +3,12 @@ for Bittrex, GDAX, and Poloniex exchanges
 
 Currently working on a trader and a ticker
 
-To see the ticker, from the root directory enter
+From the root directory,
 
-   node src/cli/ticker
+    to see the ticker, enter
+
+        node src/cli/ticker
+
+    to see the trader, enter
+
+        node src/cli
