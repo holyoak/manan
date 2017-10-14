@@ -30,8 +30,8 @@ const poloPage = SB.create(
     attr: { bgColor: 56 }
 });
 const poloStyle = { attr: { bgColor: 18 } };
-poloFeed.fill( poloStyle );
-poloFeed.draw();
+poloPage.fill( poloStyle );
+poloPage.draw();
 
 
 const gdaxPage = TB.create( { dst: gdaxDiv, forceInBound:1 } );

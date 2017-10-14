@@ -3,7 +3,7 @@
 //
 "use strict";
 
-const max_messages = 12;
+const max_messages = 13;
 const trades = [];
 
 module.exports = {

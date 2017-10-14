@@ -1,14 +1,15 @@
 const auth = require('../../auth');
 const GdaxStream = require('../../streams/gdax');
+let gdaxSocket ={};
 
-if( auth.gadx.key == "GDAX_KEY") {
-  const gdaxSocket = new GdaxStream(
+if( auth.gdax.key == "GDAX_KEY") {
+  gdaxSocket = new GdaxStream(
     ['BTC-USD'],
     'wss://ws-feed.gdax.com'
   );
 }
 else {
-  const gdaxSocket = new GdaxStream(
+  gdaxSocket = new GdaxStream(
     ['BTC-USD'],
     'wss://ws-feed.gdax.com',
     {
