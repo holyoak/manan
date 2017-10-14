@@ -32,31 +32,31 @@
     {
       "id": "BTC",
       "pairs": [ 
-        { "id": "ETH", "market_id": "eth-btc" }, 
-        { "id": "LTC", "market_id": "ltc-btc" }, 
-        { "id": "USD", "market_id": "btc-usd" } 
+        { "id": "ETH", "exchange_id": "eth-btc" }, 
+        { "id": "LTC", "exchange_id": "ltc-btc" }, 
+        { "id": "USD", "exchange_id": "btc-usd" } 
       ]
     },
     {
       "id": "ETH",
       "pairs": [ 
-        { "id": "BTC", "market_id": "eth-btc" }, 
-        { "id": "USD", "market_id": "btc-usd" } 
+        { "id": "BTC", "exchange_id": "eth-btc" }, 
+        { "id": "USD", "exchange_id": "btc-usd" } 
       ]
     },
     {
       "id": "LTC",
       "pairs": [ 
-        { "id": "BTC", "market_id": "ltc-btc" }, 
-        { "id": "USD", "market_id": "btc-usd" } 
+        { "id": "BTC", "exchange_id": "ltc-btc" }, 
+        { "id": "USD", "exchange_id": "btc-usd" } 
       ]
     },
     {
       "id": "USD",
       "pairs": [ 
-        { "id": "ETH", "market_id": "eth-usd" }, 
-        { "id": "LTC", "market_id": "ltc-usd" }, 
-        { "id": "BTC", "market_id": "btc-usd" } 
+        { "id": "ETH", "exchange_id": "eth-usd" }, 
+        { "id": "LTC", "exchange_id": "ltc-usd" }, 
+        { "id": "BTC", "exchange_id": "btc-usd" } 
       ]
     }
   ],
