@@ -54,7 +54,7 @@ const parser = {
     console.log('getting balances for '+e.name+'...');
     e.client.getAccounts(smush);
     function smush(err, response, data){
-      if(err) { console.log('ERROR '+err) ; }
+      if(err) { console.error('ERROR '+err) ; }
       else{
         console.log('balances retrieved from '+e.name);
         e.balances = data;
@@ -99,11 +99,18 @@ function setSandbox(exchanges){
 // any valid exchange or asset
   for(const e of exchanges) {
   	if(e.client == 'sandbox'){
-  	  e.balances = [{
+  	  e.balances = [
+        {
           "currency": "ETH",// change to 'asset' when parser breaks out
           "balance": "10",
           "available": "10"
-      }];
+        },
+        {
+          "currency": "LTC",// change to 'asset' when parser breaks out
+          "balance": "10",
+          "available": "10"
+        }
+      ];
   	}
   }
   return exchanges

@@ -1,0 +1,93 @@
+{
+  "id": "poloniex",
+  "name": "Poloniex",
+  "countries": "US",
+  "rateLimit": 1000,
+  "hasCORS": true,
+  "hasFetchMyTrades": true,
+  "hasFetchOrder": true,
+  "hasFetchOrders": true,
+  "hasFetchOpenOrders": true,
+  "hasFetchClosedOrders": true,
+  "hasFetchTickers": true,
+  "hasWithdraw": true,
+  "urls": {
+    "logo": "https://user-images.githubusercontent.com/1294454/27766817-e9456312-5ee6-11e7-9b3c-b628ca5626a5.jpg",
+    "api": {
+      "public": "https://poloniex.com/public",
+      "private": "https://poloniex.com/tradingApi"
+    },
+    "www": "https://poloniex.com",
+    "doc": [
+      "https://poloniex.com/support/api/",
+      "http://pastebin.com/dMX7mZE0"
+    ],
+    "fees": "https://poloniex.com/fees"
+  },
+  "api": {
+    "public": {
+      "get": [
+        "return24hVolume",
+        "returnChartData",
+        "returnCurrencies",
+        "returnLoanOrders",
+        "returnOrderBook",
+        "returnTicker",
+        "returnTradeHistory"
+      ]
+    },
+    "private": {
+      "post": [
+        "buy",
+        "cancelLoanOffer",
+        "cancelOrder",
+        "closeMarginPosition",
+        "createLoanOffer",
+        "generateNewAddress",
+        "getMarginPosition",
+        "marginBuy",
+        "marginSell",
+        "moveOrder",
+        "returnActiveLoans",
+        "returnAvailableAccountBalances",
+        "returnBalances",
+        "returnCompleteBalances",
+        "returnDepositAddresses",
+        "returnDepositsWithdrawals",
+        "returnFeeInfo",
+        "returnLendingHistory",
+        "returnMarginAccountSummary",
+        "returnOpenLoanOffers",
+        "returnOpenOrders",
+        "returnOrderTrades",
+        "returnTradableBalances",
+        "returnTradeHistory",
+        "sell",
+        "toggleAutoRenew",
+        "transferBalance",
+        "withdraw"
+      ]
+    }
+  },
+  "fees": {
+    "trading": {
+      "maker": 0.0015,
+      "taker": 0.0025
+    },
+    "funding": 0.0
+  },
+  "limits": {
+    "amount": {
+      "min": 0.00000001,
+      "max": 1000000000
+    },
+    "price": {
+      "min": 0.00000001,
+      "max": 1000000000
+    }
+  },
+  "precision": {
+    "amount": 8,
+    "price": 8
+  }
+}

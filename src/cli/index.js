@@ -20,7 +20,7 @@ function init(){
     .then((data)=>{
       State.accounts = data;
       view.showAccounts(data);
-      positions.init();
+      positions.init(data);
       // showPositions(data);
     });
 }
